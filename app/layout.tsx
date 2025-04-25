@@ -12,11 +12,12 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
 });
 
-let title = "Tweetbio – AI Twitter Bio Generator";
-let description = "Generate your next Twitter bio in seconds";
-let url = "https://www.twitterbio.io/";
-let ogimage = "https://www.twitterbio.io/og-image.png";
-let sitename = "twitterbio.io";
+let title = "ai-cover – Générateur de lettres de motivation IA";
+let description =
+  "Créez en quelques secondes des lettres de motivation personnalisées en streaming grâce aux modèles Mixtral 8x7B et Llama 3.1 8B via Together AI.";
+let url = "https://ai-cover-p3rj.vercel.app/";
+let ogimage = "g";
+let sitename = "https://ai-cover-p3rj.vercel.app/";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
