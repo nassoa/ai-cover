@@ -21,12 +21,10 @@ export default function Toggle({ isGPT, setIsGPT }: DropDownProps) {
     {
       label: "Mixtral 8x7B",
       value: false,
-      icon: "/mistral-logo.jpeg",
     },
     {
       label: "Llama 3.1 8B",
       value: true,
-      icon: "/llama-logo.webp",
     },
   ];
 
@@ -35,15 +33,8 @@ export default function Toggle({ isGPT, setIsGPT }: DropDownProps) {
   return (
     <Menu as="div" className="relative block text-left w-full">
       <div>
-        <Menu.Button className="inline-flex w-full justify-between items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-black">
+        <Menu.Button className="inline-flex w-full justify-between items-center rounded-md border border-gray-300 bg-stone-900 px-4 py-2 text-white shadow-sm hover:bg-stone-800 focus:outline-none focus:ring-2 focus:ring-black">
           <div className="flex items-center gap-2">
-            <Image
-              src={selectedOption?.icon || ""}
-              width={25}
-              height={25}
-              alt={selectedOption?.label || ""}
-              className="inline-block"
-            />
             <span>{selectedOption?.label}</span>
           </div>
           <ChevronUpIcon
@@ -80,15 +71,6 @@ export default function Toggle({ isGPT, setIsGPT }: DropDownProps) {
                     )}
                   >
                     <div className="flex items-center gap-2">
-                      <Image
-                        src={option.icon}
-                        width={25}
-                        height={25}
-                        alt={option.label}
-                        className={classNames(
-                          isGPT === option.value ? "opacity-100" : "opacity-50"
-                        )}
-                      />
                       <span>{option.label}</span>
                     </div>
                     {isGPT === option.value && (
