@@ -1,22 +1,33 @@
-# [twitterbio.io](https://www.twitterbio.io/)
+# ai-cover
 
-This project generates Twitter (X) bios for you using Together AI.
+**Générez automatiquement des lettres de motivation personnalisées à partir d’offres d’emploi et de vos informations personnelles.**
 
-[![Twitter Bio Generator](./public/screenshot.png)](https://www.twitterbio.io)
+## Table des matières
 
-## How it works
+- [Description](#description)
+- [Fonctionnalités](#fonctionnalités)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
 
-This project uses both [Mixtral 8x7B](https://api.together.xyz/playground/chat/mistralai/Mixtral-8x7B-Instruct-v0.1) and [Llama 3.1 8B](https://api.together.xyz/playground/chat/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo) with streaming to generate a Twitter bio. It constructs a prompt based on the form and user input, sends it either to the [Together.ai](https://togetherai.link/) API, then streams the response back to the application.
+## Description
 
-If you'd like to see how I built an older version of this app with GPT 3.5, check out the [video](https://youtu.be/JcE-1xzQTE0) or [blog post](https://vercel.com/blog/gpt-3-app-next-js-vercel-edge-functions).
+**ai-cover** est une application web qui permet de générer des lettres de motivation adaptées à partir d’une offre d’emploi et d’informations personnelles fournies par l’utilisateur.  
+Le projet utilise les modèles **Mixtral 8x7B** et **Llama 3.1 8B** via l’API Together AI, avec streaming des réponses pour une expérience fluide.
 
-## Running Locally
+## Fonctionnalités
 
-1. Create a `.env` file, make an account at [Together.ai](https://togetherai.link/), and add your API key under `TOGETHER_API_KEY`
-2. Run the application with `npm run dev` and it will be available at `http://localhost:3000`.
+- Coller une offre d’emploi à analyser
+- Ajouter ses informations personnelles : nom, prénom, adresse, compétences clés
+- Génération automatique d’une lettre de motivation adaptée
+- Affichage en temps réel de la lettre générée (streaming)
+- Interface utilisateur réactive et moderne
 
-## One-Click Deploy
+## Tech Stack
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Nutlope/twitterbio&env=TOGETHER_API_KEY&project-name=twitter-bio-generator&repo-name=twitterbio)
+- **Framework** : Next.js
+- **Langage** : TypeScript
+- **Styling** : Tailwind CSS
+- **UI** : Headless UI, Heroicons, Lucide React
+- **API IA** : Together AI
+  - Modèles : Mixtral 8x7B :contentReference[oaicite:3]{index=3}, Llama 3.1 8B :contentReference[oaicite:4]{index=4}
+  - Streaming des réponses :contentReference[oaicite:5]{index=5}
