@@ -7,7 +7,6 @@
 - [Description](#description)
 - [Fonctionnalités](#fonctionnalités)
 - [Tech Stack](#tech-stack)
-- [Installation](#installation)
 
 ## Description
 
