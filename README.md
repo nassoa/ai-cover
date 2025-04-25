@@ -19,7 +19,6 @@ Le projet utilise les modèles **Mixtral 8x7B** et **Llama 3.1 8B** via l’API 
 - Ajouter ses informations personnelles : nom, prénom, adresse, compétences clés
 - Génération automatique d’une lettre de motivation adaptée
 - Affichage en temps réel de la lettre générée (streaming)
-- Interface utilisateur réactive et moderne
 
 ## Tech Stack
 
